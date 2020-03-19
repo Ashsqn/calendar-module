@@ -1,0 +1,31 @@
+{
+    "name": "sqn/laravel-fullcalendar",
+    "description": "Laravel helper for FullCalendar.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ash Radwan",
+            "email": "ashraf.radwan@synequanon.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sqn\\LaravelFullcalendar": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sqn\\LaravelFullcalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "Sqn\\LaravelFullcalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
